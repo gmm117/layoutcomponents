@@ -1,0 +1,53 @@
+.wrap {
+  background-color: orange;
+  margin: auto 50px;
+}
+
+.header {
+  background-color: paleturquoise;
+  height: 250px;
+}
+
+.video {
+  background: yellowgreen;
+  height: 516px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -150px);
+  width: 832px;
+
+  & > video {
+    width: 100%;
+  }
+}
+
+.start {
+  background-color: orange;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  padding-top: 130px;
+  text-align: center;
+
+  & > .button {
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    line-height: 56px;
+    padding: bottom;
+    padding: 4px 132px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 385px;
+
+    &:hover,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
