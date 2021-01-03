@@ -1,0 +1,72 @@
+
+.wrapper {
+    background-color: #222;
+    height: 100%;
+}
+
+.grid {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    // font-size: 0; // font의 baseline값 만큼 아래(decentheight),옆에 영역의 빈값을 없애기 위한 임시처리
+    text-align: center;
+}
+
+.griditem {
+    // width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top; // 아래 영역을 없앨순 있다.
+    padding: 0 30px;
+}
+
+.griditem.a { background-color: orange; }
+.griditem.b { background-color: orangered; }
+// .griditem.b { background-color: orangered; margin: 0 -4px; }
+.griditem.c { background-color: red; }
+
+
+.gridfloat {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    // overflow: hidden;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.griditemfloat {
+    width: 100px;
+    height: 100px;
+    float: left;
+    opacity: 0.7;
+}
+
+.griditemfloat.a { background-color: orange; }
+.griditemfloat.b { background-color: orangered; }
+.griditemfloat.c { background-color: red; }
+
+.contents {
+    border: 10px solid blue;
+}
+
+.gridcomp {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+    justify-content: center;
+}
+
+.griditemcomp {
+    height: 100px;
+}
+
+.griditemcomp.a { background-color: orange; padding: 0 50px;}
+.griditemcomp.b { background-color: orangered; }
+.griditemcomp.c { background-color: red; }

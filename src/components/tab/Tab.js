@@ -16,20 +16,23 @@ TabItem.propTypes = {
 const Tab = () => {
   return (
     <div className={cx(styles.tabinfo)}>
-      <ul className={cx(styles.tab)}>
-        <TabItem>
-          <Link to="/tab1">tab1</Link>
-        </TabItem>
-        <TabItem>
-          <Link to="/tab2">tab2</Link>
-        </TabItem>
-        <TabItem>
-          <Link to="/tab3">tab3</Link>
-        </TabItem>
-        <TabItem>
-          <Link to="/tab4">tab4</Link>
-        </TabItem>
-      </ul>
+      <div className={styles.tabheader}>
+        <Link to="/tab1">Hong's TabHome</Link>
+        <ul className={cx(styles.tab)}>
+          <TabItem>
+            <Link to="/tab1">tab1</Link>
+          </TabItem>
+          <TabItem>
+            <Link to="/tab2">tab2</Link>
+          </TabItem>
+          <TabItem>
+            <Link to="/tab3">tab3</Link>
+          </TabItem>
+          <TabItem>
+            <Link to="/tab4">tab4</Link>
+          </TabItem>
+        </ul>
+      </div>
       <div className={cx(styles.content)}>
         <Switch>
           <Route exact path="/tab1" component={() => <div>tab1 page</div>} />

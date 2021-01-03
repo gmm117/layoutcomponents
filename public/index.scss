@@ -1,7 +1,23 @@
 html, body {
     height: 100%;
-}
+  }
 
 #root {
+    display: flex;
     height: 100%;
+}
+
+nav {
+    margin-top: 60px;
+    width: 100px;
+
+    ul > li {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
 }

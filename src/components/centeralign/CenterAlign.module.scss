@@ -1,0 +1,29 @@
+.box {
+    width: 400px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    border-right: 5px solid #ccc;
+    border-bottom: 5px solid #999;
+
+    & > h1 {
+        width: 200px;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 auto;
+        color: orangered;
+        background-color: palegreen;
+        border-bottom: 10px solid orangered;
+    }
+
+    & > p {
+        font-size: 8px;
+         padding: 3rem;
+    }
+}
+
+.boxCover {
+    width: 100%;
+}
+
